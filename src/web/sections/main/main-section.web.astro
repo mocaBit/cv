@@ -11,7 +11,17 @@ import LabelledValue from '@/web/components/labelled-value.astro';
 
 export interface Props extends MainSection {}
 
-const { action, config, description, details, fullName, image, links, role, tags } = Astro.props;
+const {
+  action,
+  config,
+  description,
+  details,
+  fullName,
+  image,
+  links,
+  role,
+  tags,
+} = Astro.props;
 ---
 
 <SectionCard {...config} hideTitle>
@@ -24,7 +34,7 @@ const { action, config, description, details, fullName, image, links, role, tags
         height={320}
         class="h-24 w-24 max-w-none rounded-lg sm:h-36 sm:w-36 md:h-52 md:w-52"
       />
-      <DownloadButton {...action} />
+      {action ? <DownloadButton {...action} /> : null}
     </div>
     <div class="flex w-full flex-col gap-5">
       <div class="flex w-full flex-col justify-between gap-2 sm:flex-row">

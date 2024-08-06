@@ -1,4 +1,11 @@
-import type { DownloadButton, Photo, LabelledValue, LinkButton, Section, Tag } from '../shared';
+import type {
+  DownloadButton,
+  Photo,
+  LabelledValue,
+  LinkButton,
+  Section,
+  Tag,
+} from '../shared';
 
 export interface MainSection extends Section {
   /**
@@ -49,7 +56,7 @@ export interface MainSection extends Section {
   /**
    * [WEB] A button that will be used to download your resume.
    */
-  action: DownloadButton;
+  action: DownloadButton | undefined;
 
   /**
    * [WEB] Your social media profiles.
