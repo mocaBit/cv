@@ -272,6 +272,18 @@ export const mui = createSkillFactory({
   url: 'https://mui.com/',
 });
 
+export const mobx = createSkillFactory({
+  name: 'MobX',
+  icon: 'simple-icons:mobx',
+  iconColor: '#FF9955',
+  url: 'https://mobx.js.org/',
+});
+
+export const yup = createSkillFactory({
+  name: 'yup',
+  url: 'https://www.npmjs.com/package/yup',
+});
+
 export const dotnet = createSkillFactory({
   name: 'C#',
   icon: 'simple-icons:dotnet',
@@ -286,12 +298,33 @@ export const prisma = createSkillFactory({
   url: 'https://www.prisma.io/',
 });
 
+export const styledComponents = createSkillFactory({
+  name: 'Styled Components',
+  icon: 'simple-icons:styledcomponents',
+  iconColor: '#DB7093',
+  url: 'https://styled-components.com/',
+});
+
+export const reactWindow = createSkillFactory({
+  name: 'React Window',
+  url: 'https://react-window.vercel.app/',
+});
+
 export const sentry = createSkillFactory({
   name: 'Sentry',
   icon: 'simple-icons:sentry',
   iconColor: '#362D59',
   url: 'https://sentry.io/',
 });
+
+export const jwt = createSkillFactory({
+  name: 'JSON Web Tokens',
+  icon: 'simple-icons:jsonwebtokens',
+  iconColor: '#000000',
+  url: 'https://jwt.io/',
+});
+
+//jwt.io/
 
 //------LEARNING
 
