@@ -1,18 +1,32 @@
 import type { ExperienceSection } from '@/types/sections/experience-section.types';
 import type { ReadonlyDeep } from 'type-fest';
-import { facebook, github, instagram, linkedin, twitter, website } from '../helpers/links';
 import {
+  facebook,
+  github,
+  instagram,
+  linkedin,
+  twitter,
+  website,
+} from '../helpers/links';
+import {
+  axios,
   chakraUi,
   eslint,
-  firebase,
+  formik,
+  jest,
   nextJs,
-  nx,
   pnpm,
   react,
   reactQuery,
+  reactSpring,
+  reactTable,
+  sentry,
   tailwindCss,
   typescript,
+  vite,
   vue,
+  git,
+  reactDnd,
 } from '../helpers/skills';
 
 const experienceSectionData = {
@@ -25,58 +39,44 @@ const experienceSectionData = {
   jobs: [
     {
       role: 'Senior front-end developer',
-      company: 'Google',
-      image: import('@/assets/logos/google-logo.jpg'),
-      dates: [new Date('2020-02'), null],
+      company: 'RCG Logistics LLC',
+      image: import('@/assets/logos/rcg.jpeg'),
+      dates: [new Date('2021-09-30'), null],
       description: `
-        - In tristique vulputate augue vel egestas.
-        - Quisque ac imperdiet tortor, at lacinia ex.
-        - Duis vel ex hendrerit, commodo odio sed, aliquam enim.
-        - Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi.
-        - Nunc malesuada leo et est iaculis facilisis.
-        - Fusce eu urna ut magna malesuada fringilla.
-      `,
-      tagsList: {
-        title: 'Technologies',
-        tags: [react(), nextJs(), typescript(), nx(), firebase()],
-      },
-      links: [facebook({ url: '#' }), linkedin({ url: '#' })],
-    },
-    {
-      role: 'React.js developer',
-      company: 'Facebook',
-      image: import('@/assets/logos/facebook-logo.png'),
-      dates: [new Date('2019-04'), new Date('2020-02')],
-      description: `
-        - Aenean eget ultricies felis. Pellentesque dictum massa ut tellus eleifend, sed posuere massa mattis.
-        - Ut posuere massa lacus, eleifend molestie tortor auctor vel.
-        - Sed sed sollicitudin eros, id ultricies mi. Aliquam sodales elit vel ante tempor, non vehicula nibh facilisis.
-        - Cras feugiat ultricies maximus. Aliquam tristique ex odio, ac semper urna accumsan a.
-      `,
-      tagsList: {
-        title: 'Technologies',
-        tags: [react(), reactQuery(), chakraUi(), eslint()],
-      },
-      links: [website({ url: '#' }), instagram({ url: '#' })],
-    },
-    {
-      role: 'Junior front-end developer',
-      company: 'GitLab',
-      image: import('@/assets/logos/gitlab-logo.png'),
-      dates: [new Date('2016-09'), new Date('2019-04')],
-      description: `
-        Nulla volutpat justo ante, rhoncus posuere massa egestas in:
+        RCG Logistics works with automotive manufacturers, relocation companies, auctions, captive finance companies, dealers, automotive parts distributors and consumers to deliver reliable vehicle shipping options with an emphasis on faster lead times, safe and insured car shipping.
 
-        - Quisque pellentesque, dolor nec sollicitudin iaculis, sem velit consequat ligula, eget tempus ligula leo et est.
-        - Maecenas ut elit sit amet nibh maximus condimentum in nec lorem. Pellentesque tincidunt odio vel leo suscipit, in interdum mi gravida.
 
-        Donec non vulputate augue 🤓
+        **Responsabilities**
+        ➔ Build reusable and efficient components.
+        ➔ Translate design mockups (\`Figma\`) into functional code.
+        ➔ Manage application state using \`react-query\`.
+        ➔ Managing logistics Orders that consume rest API \`Node.js\` services.
+        ➔ Connect the UI to web services and API build in \`Nestjs\`.
+        ➔ Identify and address performance bottlenecks.
+        ➔ Write unit tests and integration tests to ensure code quality.
+        ➔ Participate in code reviews, define coding standards, and contribute to ongoing codebase improvement.
+        ➔ Implement designs that adapt to different screen sizes and devices (mobile, tablet, desktop).
+        ➔ Build reusable components library with \`Formik\` to deal with forms.
+        ➔ Collaborate on deployment strategies and CI/CD configuration.
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [vue(), tailwindCss(), pnpm()],
+        tags: [
+          typescript(),
+          react(),
+          reactTable(),
+          reactQuery(),
+          reactSpring(),
+          reactDnd(),
+          formik(),
+          axios(),
+          jest(),
+          git(),
+          sentry(),
+          vite(),
+        ],
       },
-      links: [twitter({ url: '#' }), github({ url: '#' })],
+      links: [],
     },
   ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;

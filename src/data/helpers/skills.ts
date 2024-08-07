@@ -322,3 +322,46 @@ export const auth0 = createSkillFactory({
   iconColor: '#47A248',
   url: 'https://auth0.com/',
 });
+
+// ------------------ EXPERIENCE
+
+export const reactTable = createSkillFactory({
+  name: 'React Table',
+  icon: 'simple-icons:reacttable',
+  iconColor: '#47A248',
+  url: 'https://tanstack.com/table',
+});
+
+export const formik = createSkillFactory({
+  name: 'Formik',
+  url: 'https://formik.org/',
+});
+
+export const fluentUI = createSkillFactory({
+  name: 'Fluent UI',
+  url: 'https://react.fluentui.dev/',
+});
+
+export const axios = createSkillFactory({
+  name: 'Axios',
+  icon: 'simple-icons:axios',
+  iconColor: '#5A29E4',
+  url: 'https://axios-http.com/',
+});
+
+export const reactRouter = createSkillFactory({
+  name: 'React Router',
+  icon: 'simple-icons:reactrouter',
+  iconColor: '#CA4245',
+  url: 'https://reactrouter.com/',
+});
+
+export const reactSpring = createSkillFactory({
+  name: 'React Spring',
+  url: 'https://www.react-spring.dev/',
+});
+
+export const reactDnd = createSkillFactory({
+  name: 'React DnD',
+  url: 'https://github.com/atlassian/react-beautiful-dnd',
+});
