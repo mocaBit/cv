@@ -19,7 +19,7 @@ const educationSectionData = {
       links: [website({ url: 'https://www.unicartagena.edu.co/' })],
     },
     {
-      title: 'Scrum Developer',
+      title: 'Certification: Scrum Developer',
       institution: 'Scrum Alliance',
       image: import('@/assets/logos/scrum.png'),
       dates: [new Date('2017-08-30'), new Date('2017-09-30')],

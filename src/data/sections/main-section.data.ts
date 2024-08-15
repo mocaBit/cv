@@ -39,7 +39,9 @@ const mainSectionData = {
   ],
   description:
     "With a tenure since 2013, I'm a Fullstack Javascript Developer. Specializing in Agile methodologies, I navigate collaborative environments with precision. My focus is translating design into responsive, user-centric interfaces. I bring efficiency and adaptability to every project, ensuring optimal experiences across platforms. With a strategic mindset and keen attention to detail, I contribute a sophisticated perspective to frontend development, aligning seamlessly with evolving industry standards.",
-  tags: [{ name: 'Open for freelance' }, { name: 'Working on side project' }],
+  tags: [
+    // { name: 'Open for freelance' }, { name: 'Working on side project' }
+  ],
   action: undefined,
   /*
   action: {
