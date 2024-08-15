@@ -11,17 +11,7 @@ import LabelledValue from '@/web/components/labelled-value.astro';
 
 export interface Props extends MainSection {}
 
-const {
-  action,
-  config,
-  description,
-  details,
-  fullName,
-  image,
-  links,
-  role,
-  tags,
-} = Astro.props;
+const { action, config, description, details, fullName, image, links, role, tags } = Astro.props;
 ---
 
 <SectionCard {...config} hideTitle>
