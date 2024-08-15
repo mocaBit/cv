@@ -12,6 +12,7 @@ import {
   sentry,
   typescript,
   vite,
+  aws,
   git,
   reactDnd,
   mui,
@@ -46,6 +47,7 @@ import {
   java,
   javascript,
 } from '../helpers/skills';
+import { website } from '../helpers/links';
 
 const experienceSectionData = {
   config: {
@@ -56,10 +58,46 @@ const experienceSectionData = {
   },
   jobs: [
     {
+      role: 'Senior Software Developer',
+      company: 'Acertus',
+      image: import('@/assets/logos/acertus.png'),
+      dates: [new Date('2024-01-30'), null],
+      description: `
+        ACERTUS was built for full service integration by bundling services through acquisitions of six well-established, industry-leading companies, creating the only full-scale auto logistics platform designed to move, store, recondition, title and register finished vehicles.
+        **Responsabilities**
+        ➔ Build reusable components.
+        ➔ Translate design mockups (\`Figma\`) into functional code.
+        ➔ Manage application state using \`react-query\`.
+        ➔ Create micro apps with \`Node.js\` and \`Webpack Module Federation\`.
+        ➔ Write unit tests and integration tests to ensure code quality.
+        ➔ Participate in code reviews, define coding standards, and contribute to ongoing codebase improvement.
+        ➔ Implement designs that adapt to different screen sizes and devices (mobile, tablet, desktop).
+      `,
+      tagsList: {
+        title: 'Technologies',
+        tags: [
+          typescript(),
+          react(),
+          reactRouter(),
+          reactQuery(),
+          nodejs(),
+          aws(),
+          formik(),
+          axios(),
+          jest(),
+          git(),
+          webpack(),
+          vite(),
+          storybook(),
+        ],
+      },
+      links: [website({ url: 'https://acertusdelivers.com/' })],
+    },
+    {
       role: 'Senior front-end developer',
       company: 'RCG Logistics LLC',
       image: import('@/assets/logos/rcg.jpeg'),
-      dates: [new Date('2021-09-30'), null],
+      dates: [new Date('2021-09-30'), new Date('2024-01-30')],
       description: `
         RCG Logistics works with automotive manufacturers, relocation companies, auctions, captive finance companies, dealers, automotive parts distributors and consumers to deliver reliable vehicle shipping options with an emphasis on faster lead times, safe and insured car shipping.
         **Responsabilities**
@@ -129,7 +167,7 @@ const experienceSectionData = {
           git(),
         ],
       },
-      links: [],
+      links: [website({ url: 'https://www.indigoag.com/solutions' })],
     },
     {
       role: 'Fullstack JS/C# developer',
@@ -164,6 +202,7 @@ const experienceSectionData = {
           html5(),
           css3(),
           jest(),
+          aws(),
           cypress(),
           webpack(),
           sentry(),
@@ -171,7 +210,7 @@ const experienceSectionData = {
           jquery(),
         ],
       },
-      links: [],
+      links: [website({ url: 'https://www.catchpoint.com/' })],
     },
     {
       role: 'Fullstack JS developer',
@@ -216,7 +255,7 @@ const experienceSectionData = {
           eslint(),
         ],
       },
-      links: [],
+      links: [website({ url: 'https://www.catchpoint.com/' })],
     },
     {
       role: 'Fullstack Engineer',
@@ -248,7 +287,7 @@ const experienceSectionData = {
           git(),
         ],
       },
-      links: [],
+      links: [website({ url: 'https://www.ceiba.com.co/' })],
     },
     {
       role: 'Software Architect',
@@ -266,7 +305,7 @@ const experienceSectionData = {
         title: 'Technologies',
         tags: [dotnet(), html5(), css3()],
       },
-      links: [],
+      links: [website({ url: 'https://www.openintl.com/' })],
     },
     {
       role: 'Fullstack JS/Java Developer',
@@ -282,7 +321,7 @@ const experienceSectionData = {
         title: 'Technologies',
         tags: [java(), jsp(), git(), javascript(), html5(), css3()],
       },
-      links: [],
+      links: [website({ url: 'https://www.zabud.com.co/' })],
     },
   ],
 } as const satisfies ReadonlyDeep<ExperienceSection>;

@@ -194,6 +194,11 @@ export const java = createSkillFactory({
   name: 'Java',
 });
 
+export const aws = createSkillFactory({
+  name: 'Amazon Web Services',
+  url: 'https://aws.amazon.com/',
+});
+
 export const newrelic = createSkillFactory({
   name: 'newrelic',
   icon: 'simple-icons:newrelic',
