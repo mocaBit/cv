@@ -6,7 +6,7 @@ const favoritesSectionData = {
     title: 'My favorites',
     slug: 'favorites',
     icon: 'fa6-solid:star',
-    visible: true,
+    visible: false,
   },
   books: {
     title: 'Books I read',
@@ -19,7 +19,8 @@ const favoritesSectionData = {
       },
       {
         image: import('@/assets/favorites/books/book-2.jpg'),
-        title: 'Domain-Driven Design: Tackling Complexity in the Heart of Software',
+        title:
+          'Domain-Driven Design: Tackling Complexity in the Heart of Software',
         author: 'Eric Evans',
         url: 'https://www.goodreads.com/book/show/179133.Domain_Driven_Design',
       },
@@ -31,7 +32,8 @@ const favoritesSectionData = {
       },
       {
         image: import('@/assets/favorites/books/book-4.jpeg'),
-        title: 'The Clean Coder: A Code of Conduct for Professional Programmers',
+        title:
+          'The Clean Coder: A Code of Conduct for Professional Programmers',
         author: 'Robert C. Martin',
         url: 'https://www.goodreads.com/book/show/10284614-the-clean-coder',
       },
@@ -77,7 +79,8 @@ const favoritesSectionData = {
     data: [
       {
         image: import('@/assets/favorites/videos/video-1.jpeg'),
-        title: 'Building Resilient Frontend Architecture • Monica Lent • GOTO 2019',
+        title:
+          'Building Resilient Frontend Architecture • Monica Lent • GOTO 2019',
         url: 'https://youtu.be/TqfbAXCCVwE',
       },
       {

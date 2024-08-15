@@ -174,6 +174,47 @@ export const cypress = createSkillFactory({
   url: 'https://www.cypress.io/',
 });
 
+export const varnish = createSkillFactory({
+  name: 'Varnish',
+  url: 'https://varnish-cache.org/',
+});
+
+export const jenkins = createSkillFactory({
+  name: 'jenkins',
+  icon: 'simple-icons:jenkins',
+  iconColor: '#D24939',
+  url: 'https://www.jenkins.io/',
+});
+
+export const jsp = createSkillFactory({
+  name: 'Java Server Pages',
+});
+
+export const java = createSkillFactory({
+  name: 'Java',
+});
+
+export const newrelic = createSkillFactory({
+  name: 'newrelic',
+  icon: 'simple-icons:newrelic',
+  iconColor: '#1CE783',
+  url: 'https://newrelic.com/',
+});
+
+export const express = createSkillFactory({
+  name: 'express',
+  icon: 'simple-icons:express',
+  iconColor: '##000000',
+  url: 'https://expressjs.com/',
+});
+
+export const jquery = createSkillFactory({
+  name: 'jquery',
+  icon: 'simple-icons:jquery',
+  iconColor: '#0769AD',
+  url: 'https://jqueryui.com/',
+});
+
 export const eslint = createSkillFactory({
   name: 'ESLint',
   icon: 'simple-icons:eslint',
@@ -193,6 +234,13 @@ export const sass = createSkillFactory({
   icon: 'simple-icons:sass',
   iconColor: '#CC6699',
   url: 'https://sass-lang.com/',
+});
+
+export const ruby = createSkillFactory({
+  name: 'Ruby',
+  icon: 'simple-icons:ruby',
+  iconColor: '#CC342D',
+  url: 'https://www.ruby-lang.org/',
 });
 
 export const tailwindCss = createSkillFactory({
