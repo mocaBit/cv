@@ -119,7 +119,7 @@ const experienceSectionData = {
         ➔ Collaborate on deployment strategies and CI/CD configuration.
       `,
       tagsList: {
-        title: 'Technologies',
+        title: 'Technologies ',
         tags: [
           typescript(),
           react(),
