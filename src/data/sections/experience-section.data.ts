@@ -46,6 +46,9 @@ import {
   jsp,
   java,
   javascript,
+  nestJs,
+  postgreSql,
+  nextJs,
 } from '../helpers/skills';
 import { website } from '../helpers/links';
 
@@ -68,7 +71,7 @@ const experienceSectionData = {
         ➔ Build reusable components.
         ➔ Translate design mockups (\`Figma\`) into functional code.
         ➔ Manage application state using \`react-query\`.
-        ➔ Create micro apps with \`Node.js\` and \`Webpack Module Federation\`.
+        ➔ Create micro apps with \`Nest.js\` and \`Webpack Module Federation\`.
         ➔ Write unit tests and integration tests to ensure code quality.
         ➔ Participate in code reviews, define coding standards, and contribute to ongoing codebase improvement.
         ➔ Implement designs that adapt to different screen sizes and devices (mobile, tablet, desktop).
@@ -78,9 +81,11 @@ const experienceSectionData = {
         tags: [
           typescript(),
           react(),
+          nestJs(),
+          nodejs(),
+          postgreSql(),
           reactRouter(),
           reactQuery(),
-          nodejs(),
           aws(),
           formik(),
           axios(),
@@ -118,6 +123,7 @@ const experienceSectionData = {
         tags: [
           typescript(),
           react(),
+          nextJs(),
           reactRouter(),
           reactTable(),
           reactQuery(),
@@ -181,6 +187,7 @@ const experienceSectionData = {
         ➔ Develop Canvas components for graph rendering, supporting interactive features (including Scatter Plots, Bar Charts, Line
         Charts, Pie Charts, using D3.js and React.js.
         ➔ Implement GraphQL endpoint in C# to handle data queries and mutations.
+        ➔ Implement a backend for frontend (BFF) in \`Nest.js\`
         ➔ Define GraphQL schema and types for the required data entities.
         ➔ Optimize rendering performance for handling large datasets.
         ➔ Incorporate user interactions, such as zooming and panning in components.
@@ -191,6 +198,7 @@ const experienceSectionData = {
         tags: [
           typescript(),
           react(),
+          nestJs(),
           dotnet(),
           fluentUI(),
           d3js(),

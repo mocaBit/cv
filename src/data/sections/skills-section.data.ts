@@ -18,6 +18,7 @@ import {
   jquery,
   mongoDb,
   mui,
+  nestJs,
   nextJs,
   nginx,
   nodejs,
@@ -58,6 +59,7 @@ const skillsSectionData = {
         git({ level: 4 }),
         sass({ level: 4 }),
         nodejs({ level: 4 }),
+        nestJs({ level: 3 }),
         mui({ level: 4 }),
         fluentUI({ level: 2 }),
         angular({ level: 3 }),
@@ -80,6 +82,7 @@ const skillsSectionData = {
         nginx({ level: 2 }),
         docker({ level: 2 }),
         redis({ level: 2 }),
+        postgreSql({ level: 3 }),
       ],
     },
     {
