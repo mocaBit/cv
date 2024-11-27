@@ -42,13 +42,11 @@ const mainSectionData = {
   tags: [
     // { name: 'Open for freelance' }, { name: 'Working on side project' }
   ],
-  action: undefined,
-  /*
   action: {
     label: 'Download CV',
     url: '/cv.pdf',
     downloadedFileName: 'CV-Moises-Correa.pdf',
-  },*/
+  },
   links: [
     github({ url: 'https://github.com/mocaBit' }),
     linkedin({ url: 'https://www.linkedin.com/in/mocabit' }),
